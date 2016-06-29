@@ -1,0 +1,80 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="Matin"
+        android:key="matin">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="aerius"
+            android:title="Aerius" />
+
+        <EditTextPreference
+            android:dependency="aerius"
+            android:capitalize="words"
+            android:defaultValue="60"
+            android:inputType="number"
+            android:key="aerius_r"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Comprimés restants" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="grazax"
+            android:title="Grazax" />
+
+        <EditTextPreference
+            android:dependency="grazax"
+            android:capitalize="words"
+            android:defaultValue="60"
+            android:inputType="number"
+            android:key="grazax_r"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Comprimés restants" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="truc"
+            android:title="Truc du frigo" />
+
+        <EditTextPreference
+            android:dependency="truc"
+            android:capitalize="words"
+            android:defaultValue="OK"
+            android:inputType="textCapWords"
+            android:key="truc_r"
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:title="Quantité restante" />
+    </PreferenceCategory>
+
+<PreferenceCategory
+    android:title="Soir"
+    android:key="soir">
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="seretide"
+        android:title="Seretide" />
+
+    <EditTextPreference
+        android:dependency="seretide"
+        android:capitalize="words"
+        android:defaultValue="60"
+        android:inputType="number"
+        android:key="seretide_r"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Bouffées restantes" />
+
+</PreferenceCategory>
+
+
+
+
+
+</PreferenceScreen>
